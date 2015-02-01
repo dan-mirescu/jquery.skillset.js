@@ -9,6 +9,10 @@ Features
 - Accepts input data in a clean and simple JSON format
 - Optionally collapses the container to a specified height and expands it on click.
 
+Example
+---------
+You can see jquery.skillset in action [here](http://dan-mirescu.github.io/jquery_skillset/)
+
 Usage
 ---------
 First you need to include the following in your page:
