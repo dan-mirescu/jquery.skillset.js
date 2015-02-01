@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Skillset</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="jquery.skillset.js"></script>
+		<link rel="stylesheet" href="jquery.skillset.css" />
+	</head>
+	
+	<body>
+	
+		<div id="skillset"></div>
+		
+		<script>
+		var _skills = {
+			
+			"Skills category" : {
+				"Paint rainbows" : 0.2,
+				"Write awesome code" : 0.65,
+				"Day dream" : 0.8
+			},
+			
+			"Another skills category" : {
+				"Writing skills in a list" : 0.4,
+				"Trying to come up with funny example skills but failing :)" : 0.7,
+				"Anyway, you can also have a row without a progress state, like this one." : "",
+				"#You can also insert a sub-heading. Just put \"#\" at the beginning of the label" : "",
+				"And then continue to add skills" : 0.64,
+				"Or you could use this script to show different progress states, like below:" : ""
+			},
+			
+			"Project X progress state" : {
+				"Activity 1" : 0.6,
+				"Activity 2" : 0.84,
+				"Activity 3" : 0.43,
+				"#Contractors activities" : "",
+				"Contractor activity 1" : 0.3,
+				"Contractor activity 2" : 0.8
+			}
+		};
+		
+		jQuery().ready(function() {
+			jQuery("#skillset").skillSet(_skills, { collapseHeight: 150, readMoreString: "See more", collapseString: "Minimize back" });
+		});
+		</script>
+
+	</body>
+
+</html>
+
+
